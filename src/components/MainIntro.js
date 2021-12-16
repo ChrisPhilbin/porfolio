@@ -1,4 +1,5 @@
 import React from "react";
+import SocialIcons from "../navigation/SocialIcons";
 
 const MainIntro = () => {
   return (
@@ -41,6 +42,9 @@ const MainIntro = () => {
           for styling and it has really grown on me. Check out some of my side
           projects below.
         </p>
+        <span className="block mt-2 md:hidden">
+          <SocialIcons />
+        </span>
       </div>
     </div>
   );

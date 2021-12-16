@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import InterviewFeedback from "./components/InterviewFeedback";
 import MainIntro from "./components/MainIntro";
@@ -17,6 +17,9 @@ const store = createStore(
 );
 
 function App() {
+  useEffect(() => {
+    document.title = "Chris Philbin's Portfolio";
+  }, []);
   return (
     <>
       <Provider store={store}>
