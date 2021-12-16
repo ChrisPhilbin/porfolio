@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import InterviewFeedback from "./components/InterviewFeedback";
 import MainIntro from "./components/MainIntro";
 import SideProjects from "./components/SideProjects";
 import TopNav from "./navigation/TopNav";
@@ -24,6 +25,8 @@ function App() {
         <MainIntro />
 
         <SideProjects />
+
+        <InterviewFeedback />
 
         <RecentBlogPosts />
       </Provider>

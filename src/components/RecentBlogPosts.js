@@ -11,29 +11,32 @@ const RecentBlogPosts = () => {
     dispatch(fetchRecentPosts());
   }, []);
 
-  console.log(posts, loading, hasErrors, "current posts");
-
   return (
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-2 py-4 bg-black">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-2 py-4 bg-gradient-to-r from-indigo-900 to-indigo-800">
+      <div className="md:col-span-3">
+        <p className="font-bio text-4xl font-bold text-white text-center">
+          My Recent Blog Posts
+        </p>
+      </div>
       {posts.length ? (
         <>
           {posts.map((post) => (
             <div
               key={post.id}
-              class="relative bg-white rounded-xl w-4/5 ml-auto mr-auto my-4 p-4"
+              className="relative bg-slate-100 rounded-xl w-4/5 ml-auto mr-auto my-4 p-4"
             >
-              <p class="text-lg font-bio font-bold text-gray-700 text-center mb-2">
+              <p className="text-lg font-bio font-bold text-gray-700 text-center mb-2">
                 {post.title.rendered}
               </p>
               <p
-                class="font-bio text-gray-700 tracking-wide"
+                className="font-bio text-gray-700 tracking-wide"
                 dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
               ></p>
-              <p class="block text-sm font-bio text-gray-400 tracking-wide italic mt-2">
+              <p className="block text-sm font-bio text-gray-400 tracking-wide italic mt-2">
                 Posted on: {new Date(post.date).toDateString()}
               </p>
-              <div class="h-8"></div>
-              <p class="block absolute bottom-4 right-8 font-bio font-semibold">
+              <div className="h-8"></div>
+              <p className="block absolute bottom-4 right-8 font-bio font-semibold">
                 <a href={post.link} target="new">
                   Read more...
                 </a>
