@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
+import * as React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRecentPosts } from "../store/actions/PostActions";
 import { Loading } from "../utils/Loading";
-import ShowBlogPost from "./blog/ShowBlogPost.tsx";
+import ShowBlogPost from "./blog/ShowBlogPost";
 
 const RecentBlogPosts = () => {
   const dispatch = useDispatch();
 
   const { posts, loading, hasErrors } = useSelector((state) => state.posts);
 
-  useEffect(() => {
+  React.useEffect(() => {
     dispatch(fetchRecentPosts());
   }, [dispatch]);
 

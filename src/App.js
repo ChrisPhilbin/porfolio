@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import * as React from "react";
 import "./App.css";
-import InterviewFeedback from "./components/InterviewFeedback";
+import { InterviewFeedback } from "./components/InterviewFeedback";
 import MainIntro from "./components/MainIntro";
 import SideProjects from "./components/SideProjects";
 import TopNav from "./navigation/TopNav";
@@ -10,6 +10,7 @@ import { Provider } from "react-redux";
 import thunkMiddleware from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 import RecentBlogPosts from "./components/RecentBlogPosts";
+import { Footer } from "./navigation/Footer";
 
 const store = createStore(
   rootReducer,
@@ -17,7 +18,7 @@ const store = createStore(
 );
 
 function App() {
-  useEffect(() => {
+  React.useEffect(() => {
     document.title = "Chris Philbin's Portfolio";
   }, []);
   return (
@@ -32,6 +33,8 @@ function App() {
         <InterviewFeedback />
 
         <RecentBlogPosts />
+
+        <Footer />
       </Provider>
     </>
   );

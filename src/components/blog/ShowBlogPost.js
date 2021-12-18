@@ -1,6 +1,6 @@
 import React from "react";
 
-const ShowBlogPost = ({ post }: PostProps) => {
+const ShowBlogPost = ({ post }) => {
   return (
     <div
       key={post.id}
@@ -13,31 +13,17 @@ const ShowBlogPost = ({ post }: PostProps) => {
         className="font-bio text-gray-700 tracking-wide"
         dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
       ></p>
-      <p className="block text-sm font-bio text-gray-400 tracking-wide italic mt-2">
+      <p className="block italic text-sm font-bio text-gray-400 tracking-wide mt-2">
         Posted on: {new Date(post.date).toDateString()}
       </p>
       <div className="h-8"></div>
-      <p className="block absolute bottom-4 right-8 font-bio font-semibold">
+      <div className="absolute right-8 bottom-2">
         <a href={post.link} target="new">
           Read more...
         </a>
-      </p>
+      </div>
     </div>
   );
-};
-
-type PostProps = {
-  post: {
-    id: number;
-    date: Date;
-    title: {
-      rendered: string;
-    };
-    excerpt: {
-      rendered: string;
-    };
-    link: string;
-  };
 };
 
 export default ShowBlogPost;

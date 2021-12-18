@@ -1,6 +1,4 @@
-import React from "react";
-
-const InterviewFeedback = () => {
+export const InterviewFeedback = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-2 py-6 bg-neutral-800">
       <div className="md:col-span-2 mb-3">
@@ -29,5 +27,3 @@ const InterviewFeedback = () => {
     </div>
   );
 };
-
-export default InterviewFeedback;
