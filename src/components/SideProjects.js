@@ -27,12 +27,12 @@ const SideProjects = () => {
               href="https://github.com/ChrisPhilbin/does-rover-live"
               target="blank"
             >
-              <button className="mt-2 h-14 w-28 bg-projectButton hover:bg-project-button-hover rounded-md text-xl text-white font-bio">
+              <button className="mt-2 h-14 w-28 md:w-2/5 bg-projectButton hover:bg-project-button-hover rounded-md text-lg text-white font-bio">
                 Github
               </button>
             </a>
             <a href="https://www.doesroverlive.com" target="blank">
-              <button className="mt-2 ml-3 h-14 w-28 bg-projectButton hover:bg-project-button-hover rounded-md text-xl text-white font-bio">
+              <button className="mt-2 ml-3 h-14 w-28 md:w-2/5 bg-projectButton hover:bg-project-button-hover rounded-md text-lg text-white font-bio">
                 Deployed
               </button>
             </a>
@@ -57,12 +57,12 @@ const SideProjects = () => {
               href="https://github.com/ChrisPhilbin/coastal-coating"
               target="blank"
             >
-              <button className="mt-2 h-14 w-28 bg-projectButton hover:bg-project-button-hover rounded-md text-xl text-white font-bio">
+              <button className="mt-2 h-14 w-28 md:w-2/5 bg-projectButton hover:bg-project-button-hover rounded-md text-lg text-white font-bio">
                 Github
               </button>
             </a>
             <a href="https://coastal-coating.web.app" target="blank">
-              <button className="mt-2 ml-3 h-14 w-28 bg-projectButton hover:bg-project-button-hover rounded-md text-xl text-white font-bio">
+              <button className="mt-2 ml-3 h-14 w-28 md:w-2/5 bg-projectButton hover:bg-project-button-hover rounded-md text-lg text-white font-bio">
                 Deployed
               </button>
             </a>
@@ -87,12 +87,12 @@ const SideProjects = () => {
               href="https://github.com/ChrisPhilbin/ReactReplyAllGenerator"
               target="blank"
             >
-              <button className="mt-2 h-14 w-28 bg-projectButton hover:bg-project-button-hover rounded-md text-xl text-white font-bio">
+              <button className="mt-2 h-14 w-28 md:w-2/5 bg-projectButton hover:bg-project-button-hover rounded-md text-lg text-white font-bio">
                 Github
               </button>
             </a>
             <a href="https://replyallgenerator.web.app/login" target="blank">
-              <button className="mt-2 ml-3 h-14 w-28 bg-projectButton hover:bg-project-button-hover rounded-md text-xl text-white font-bio">
+              <button className="mt-2 ml-3 h-14 w-28 md:w-2/5 bg-projectButton hover:bg-project-button-hover rounded-md text-lg text-white font-bio">
                 Deployed
               </button>
             </a>

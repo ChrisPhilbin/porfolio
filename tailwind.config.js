@@ -1,6 +1,9 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
+    screens: {
+      md: "948px",
+    },
     extend: {
       colors: {
         mainMenuPrimary: "#c02d28",
