@@ -28,10 +28,14 @@ const MainIntro = () => {
         <p className="text-lg font-bio text-slate-200 tracking-wide">
           As of late, my focus has been using front end libraries and frameworks
           such as{" "}
+          <a href="https://angular.io/" target="_blank">
+            Angular
+          </a>
+          ,{" "}
           <a href="https://reactjs.org/" target="new">
             React
-          </a>{" "}
-          and{" "}
+          </a>
+          , and{" "}
           <a href="https://vuejs.org/" target="new">
             Vue
           </a>
@@ -39,8 +43,9 @@ const MainIntro = () => {
           <a href="https://tailwindcss.com/" target="new">
             TailwindCSS
           </a>{" "}
-          for styling and it has really grown on me. Check out some of my side
-          projects below.
+          for styling and it has really grown on me. My favorite framework is
+          Angular because it's a "batteries included" approach to front end
+          development. Check out some of my side projects below.
         </p>
         <span className="block mt-2 md:hidden">
           <SocialIcons />

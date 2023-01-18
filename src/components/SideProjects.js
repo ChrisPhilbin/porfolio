@@ -61,7 +61,7 @@ const SideProjects = () => {
                 Github
               </button>
             </a>
-            <a href="https://coastal-coating.web.app" target="blank">
+            <a href="https://coastalcoating.pro" target="blank">
               <button className="mt-2 ml-3 h-14 w-28 md:w-2/5 bg-projectButton hover:bg-project-button-hover rounded-md text-lg text-white font-bio">
                 Deployed
               </button>
@@ -72,26 +72,29 @@ const SideProjects = () => {
       <div className="bg-slate-100 rounded-xl w-4/5 ml-auto mr-auto my-4 p-4 divide-y divide-gray-400">
         <div className="pb-2">
           <p className="text-xl font-bio font-bold text-gray-700 text-center">
-            Reply All Generator
+            EngagePro
           </p>
         </div>
         <div className="pt-2">
           <p className="font-bio text-gray-700 tracking-wide">
-            React/Redux front end using Material-UI for styling. Paired with a
-            Node.js backend with express to handle user authentication and data
-            persistence to Firebase. Deployed to Google Cloud Platform.
+            Angular front end (TypeScript/JavaScript/RxJS) and TailwindCSS for
+            styling. Node/Express back end for full REST API. Utilizing Firebase
+            for authentication and data persistence.
           </p>
           <div className="h-1 md:h-12"></div>
           <span className="block text-center">
             <a
-              href="https://github.com/ChrisPhilbin/ReactReplyAllGenerator"
+              href="https://github.com/ChrisPhilbin/engagement-app"
               target="blank"
             >
               <button className="mt-2 h-14 w-28 md:w-2/5 bg-projectButton hover:bg-project-button-hover rounded-md text-lg text-white font-bio">
                 Github
               </button>
             </a>
-            <a href="https://replyallgenerator.web.app/login" target="blank">
+            <a
+              href="https://ng-blog-574e0.web.app/#/login?demo=true"
+              target="blank"
+            >
               <button className="mt-2 ml-3 h-14 w-28 md:w-2/5 bg-projectButton hover:bg-project-button-hover rounded-md text-lg text-white font-bio">
                 Deployed
               </button>
